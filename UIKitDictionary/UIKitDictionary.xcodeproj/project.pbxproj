@@ -12,6 +12,7 @@
 		DF5056812884586900E6F8AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5056802884586900E6F8AA /* ViewController.swift */; };
 		DF5056862884586B00E6F8AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5056852884586B00E6F8AA /* Assets.xcassets */; };
 		DF5056892884586B00E6F8AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5056872884586B00E6F8AA /* LaunchScreen.storyboard */; };
+		DFDC1DD6288EB780001EE52B /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DF5056852884586B00E6F8AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF5056882884586B00E6F8AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF50568A2884586B00E6F8AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				DF5056852884586B00E6F8AA /* Assets.xcassets */,
 				DF5056872884586B00E6F8AA /* LaunchScreen.storyboard */,
 				DF50568A2884586B00E6F8AA /* Info.plist */,
+				DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */,
 			);
 			path = UIKitDictionary;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 				DF5056812884586900E6F8AA /* ViewController.swift in Sources */,
 				DF50567D2884586900E6F8AA /* AppDelegate.swift in Sources */,
 				DF50567F2884586900E6F8AA /* SceneDelegate.swift in Sources */,
+				DFDC1DD6288EB780001EE52B /* ScrollViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
