@@ -20,6 +20,7 @@
 /* Begin PBXFileReference section */
 		DF0445DA2891A572004AD0FF /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		DF479F50289D305400DA2E2B /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		DF479F72289FDF5A00DA2E2B /* ClosurePrac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ClosurePrac.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DF5056792884586900E6F8AA /* UIKitDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF50567C2884586900E6F8AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF50567E2884586900E6F8AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 				DF50568A2884586B00E6F8AA /* Info.plist */,
 				DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */,
 				DF479F50289D305400DA2E2B /* ButtonViewController.swift */,
+				DF479F72289FDF5A00DA2E2B /* ClosurePrac.playground */,
 			);
 			path = UIKitDictionary;
 			sourceTree = "<group>";
@@ -295,6 +297,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DF85MB57QP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIKitDictionary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -321,6 +324,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DF85MB57QP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIKitDictionary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
