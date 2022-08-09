@@ -48,3 +48,4 @@ calculate(a: 2, b: 3, operation: { (no1, no2) in no1 * no2 })
 calculate(a: 2, b: 3, operation: { $0 * $1 })
 
 calculate(a: 2, b: 3) { $0 * $1 }
+
