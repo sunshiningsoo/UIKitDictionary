@@ -27,7 +27,7 @@ class DelegateProtocolViewController: UIViewController {
     @objc
     private func goToSecondView() {
         let vc = SecondViewController()
-        vc.delegate = self
+        vc.delegate = self // 바뀌는 객체 혹은 액션이 일어나는 객체에 대한 delegate로 protocol의 function이 작동하게 만들어 주어야 한다.
         vc.modalTransitionStyle = .coverVertical
         present(vc, animated: true)
     }

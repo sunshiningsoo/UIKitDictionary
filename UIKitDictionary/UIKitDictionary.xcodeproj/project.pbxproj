@@ -10,6 +10,8 @@
 		DF0445DB2891A572004AD0FF /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0445DA2891A572004AD0FF /* DataViewController.swift */; };
 		DF050B1028A293E100A5912D /* DelegateProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF050B0F28A293E100A5912D /* DelegateProtocolViewController.swift */; };
 		DF050B1228A295B100A5912D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF050B1128A295B100A5912D /* SecondViewController.swift */; };
+		DF050B1928A3E5B800A5912D /* ViewLifeCycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF050B1828A3E5B800A5912D /* ViewLifeCycleViewController.swift */; };
+		DF050B1B28A3E7F900A5912D /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF050B1A28A3E7F900A5912D /* NextViewController.swift */; };
 		DF479F51289D305400DA2E2B /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF479F50289D305400DA2E2B /* ButtonViewController.swift */; };
 		DF50567D2884586900E6F8AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF50567C2884586900E6F8AA /* AppDelegate.swift */; };
 		DF50567F2884586900E6F8AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF50567E2884586900E6F8AA /* SceneDelegate.swift */; };
@@ -23,6 +25,8 @@
 		DF0445DA2891A572004AD0FF /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		DF050B0F28A293E100A5912D /* DelegateProtocolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateProtocolViewController.swift; sourceTree = "<group>"; };
 		DF050B1128A295B100A5912D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DF050B1828A3E5B800A5912D /* ViewLifeCycleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLifeCycleViewController.swift; sourceTree = "<group>"; };
+		DF050B1A28A3E7F900A5912D /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		DF479F50289D305400DA2E2B /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		DF479F72289FDF5A00DA2E2B /* ClosurePrac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ClosurePrac.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DF5056792884586900E6F8AA /* UIKitDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +67,15 @@
 			path = DelegateProtocol;
 			sourceTree = "<group>";
 		};
+		DF050B1728A3E59A00A5912D /* ViewLifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+				DF050B1828A3E5B800A5912D /* ViewLifeCycleViewController.swift */,
+				DF050B1A28A3E7F900A5912D /* NextViewController.swift */,
+			);
+			path = ViewLifeCycle;
+			sourceTree = "<group>";
+		};
 		DF5056702884586900E6F8AA = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +95,7 @@
 		DF50567B2884586900E6F8AA /* UIKitDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				DF050B1728A3E59A00A5912D /* ViewLifeCycle */,
 				DF050B0E28A293A700A5912D /* DelegateProtocol */,
 				DF0445D328915E7C004AD0FF /* DataBindingProtocol */,
 				DF50567C2884586900E6F8AA /* AppDelegate.swift */,
@@ -172,8 +186,10 @@
 				DF050B1028A293E100A5912D /* DelegateProtocolViewController.swift in Sources */,
 				DF50567D2884586900E6F8AA /* AppDelegate.swift in Sources */,
 				DF0445DB2891A572004AD0FF /* DataViewController.swift in Sources */,
+				DF050B1B28A3E7F900A5912D /* NextViewController.swift in Sources */,
 				DF50567F2884586900E6F8AA /* SceneDelegate.swift in Sources */,
 				DF479F51289D305400DA2E2B /* ButtonViewController.swift in Sources */,
+				DF050B1928A3E5B800A5912D /* ViewLifeCycleViewController.swift in Sources */,
 				DFDC1DD6288EB780001EE52B /* ScrollViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
