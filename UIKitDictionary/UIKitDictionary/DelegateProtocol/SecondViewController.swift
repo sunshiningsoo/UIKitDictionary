@@ -13,7 +13,7 @@ protocol ChangeLabel {
 
 class SecondViewController: UIViewController {
     
-    var delegate: ChangeLabel?
+    var delegate: ChangeLabel? // SecondViewController에서 ChangeLabel의 프로토콜을 가지는데,
 
     private lazy var button: UIButton = {
         let button = UIButton()

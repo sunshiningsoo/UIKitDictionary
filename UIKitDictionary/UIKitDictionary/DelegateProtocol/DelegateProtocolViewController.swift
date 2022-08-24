@@ -28,6 +28,7 @@ class DelegateProtocolViewController: UIViewController {
     private func goToSecondView() {
         let vc = SecondViewController()
         vc.delegate = self // 바뀌는 객체 혹은 액션이 일어나는 객체에 대한 delegate로 protocol의 function이 작동하게 만들어 주어야 한다.
+        // vc.delegate = self 의 의미는 SecondViewcontroller의 delegate 함수를 DelegateProtocolViewContoller가 다뤄줄꺼야 라는 뜻
         vc.modalTransitionStyle = .coverVertical
         present(vc, animated: true)
     }
@@ -56,11 +57,11 @@ class DelegateProtocolViewController: UIViewController {
         view.backgroundColor = .systemBackground
         
     }
-    
 
 }
 
 
+// DelegateProtocolViewController가 ChangeLabel 프로토콜을 따르기 때문에, 내부함수 changeLabel()을 구현해주어여 한다.
 extension DelegateProtocolViewController: ChangeLabel {
     func changeLabel() {
         label.text = label.text == "This is First Page!!" ? "Label text changed!" : "This is First Page!!"
