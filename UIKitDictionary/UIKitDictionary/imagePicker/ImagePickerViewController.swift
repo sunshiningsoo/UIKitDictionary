@@ -4,6 +4,9 @@
 //
 //  Created by 박성수 on 2022/08/28.
 //
+// REF: https://zeddios.tistory.com/949
+// REF: https://zeddios.tistory.com/125
+// REF: https://hryang.tistory.com/32
 
 import UIKit
 
