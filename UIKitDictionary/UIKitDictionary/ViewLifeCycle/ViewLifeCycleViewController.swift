@@ -32,7 +32,7 @@ class ViewLifeCycleViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        // 처음 1번만 실행 되어야 하는 코드들
+        // 처음 1번만 실행 되어야 하는 코드들 -> 메모리에 올라가게 될때, 한번만 불리는 초기화 함수
         // 리소스 초기화, 초기 화면을 구성하는 용도
         // 다른 뷰로 갔다가 돌아오는 상황에서는 로드되지 않음 navigation의 rootView 라면 재호출 되지 않는다는 말
         super.viewDidLoad()
