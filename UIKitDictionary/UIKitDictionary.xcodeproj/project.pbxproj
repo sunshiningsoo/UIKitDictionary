@@ -20,6 +20,7 @@
 		DF5056862884586B00E6F8AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5056852884586B00E6F8AA /* Assets.xcassets */; };
 		DF5056892884586B00E6F8AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5056872884586B00E6F8AA /* LaunchScreen.storyboard */; };
 		DFDC1DD6288EB780001EE52B /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */; };
+		DFE8634C28D1F25800F975F6 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8634B28D1F25800F975F6 /* StackViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		DF5056882884586B00E6F8AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF50568A2884586B00E6F8AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		DFE8634B28D1F25800F975F6 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,14 @@
 			path = ViewLifeCycle;
 			sourceTree = "<group>";
 		};
+		DF22392528D1F21100E2E075 /* StackView */ = {
+			isa = PBXGroup;
+			children = (
+				DFE8634B28D1F25800F975F6 /* StackViewController.swift */,
+			);
+			path = StackView;
+			sourceTree = "<group>";
+		};
 		DF3F8C3028BB5E3400D48913 /* imagePicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +115,7 @@
 		DF50567B2884586900E6F8AA /* UIKitDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				DF22392528D1F21100E2E075 /* StackView */,
 				DF3F8C3028BB5E3400D48913 /* imagePicker */,
 				DF050B1728A3E59A00A5912D /* ViewLifeCycle */,
 				DF050B0E28A293A700A5912D /* DelegateProtocol */,
@@ -201,6 +212,7 @@
 				DF050B1B28A3E7F900A5912D /* NextViewController.swift in Sources */,
 				DF50567F2884586900E6F8AA /* SceneDelegate.swift in Sources */,
 				DF479F51289D305400DA2E2B /* ButtonViewController.swift in Sources */,
+				DFE8634C28D1F25800F975F6 /* StackViewController.swift in Sources */,
 				DF050B1928A3E5B800A5912D /* ViewLifeCycleViewController.swift in Sources */,
 				DFDC1DD6288EB780001EE52B /* ScrollViewController.swift in Sources */,
 			);
