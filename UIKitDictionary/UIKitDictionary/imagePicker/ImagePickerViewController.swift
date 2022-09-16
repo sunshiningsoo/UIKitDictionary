@@ -23,6 +23,7 @@ class ImagePickerViewController: UIViewController {
     
     private var imageView : UIImageView = {
         let image = UIImageView()
+        // #imageLiteral() -> 이미지 선택 가능하게 바뀜
         image.image = UIImage()
         image.backgroundColor = .red
         return image
