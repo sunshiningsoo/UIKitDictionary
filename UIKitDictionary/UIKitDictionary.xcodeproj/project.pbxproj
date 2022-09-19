@@ -21,6 +21,7 @@
 		DF5056892884586B00E6F8AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5056872884586B00E6F8AA /* LaunchScreen.storyboard */; };
 		DFDC1DD6288EB780001EE52B /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */; };
 		DFE8634C28D1F25800F975F6 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8634B28D1F25800F975F6 /* StackViewController.swift */; };
+		DFE8635E28D8AEC400F975F6 /* AboutFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8635D28D8AEC400F975F6 /* AboutFontViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		DF50568A2884586B00E6F8AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		DFE8634B28D1F25800F975F6 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
+		DFE8635D28D8AEC400F975F6 /* AboutFontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFontViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		DF50567B2884586900E6F8AA /* UIKitDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				DFE8635C28D8AEAA00F975F6 /* Font */,
 				DF22392528D1F21100E2E075 /* StackView */,
 				DF3F8C3028BB5E3400D48913 /* imagePicker */,
 				DF050B1728A3E59A00A5912D /* ViewLifeCycle */,
@@ -131,6 +134,14 @@
 				DF479F72289FDF5A00DA2E2B /* ClosurePrac.playground */,
 			);
 			path = UIKitDictionary;
+			sourceTree = "<group>";
+		};
+		DFE8635C28D8AEAA00F975F6 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				DFE8635D28D8AEC400F975F6 /* AboutFontViewController.swift */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +218,7 @@
 				DF5056812884586900E6F8AA /* ViewController.swift in Sources */,
 				DF050B1028A293E100A5912D /* DelegateProtocolViewController.swift in Sources */,
 				DF50567D2884586900E6F8AA /* AppDelegate.swift in Sources */,
+				DFE8635E28D8AEC400F975F6 /* AboutFontViewController.swift in Sources */,
 				DF0445DB2891A572004AD0FF /* DataViewController.swift in Sources */,
 				DF3F8C3228BB5E5B00D48913 /* ImagePickerViewController.swift in Sources */,
 				DF050B1B28A3E7F900A5912D /* NextViewController.swift in Sources */,
