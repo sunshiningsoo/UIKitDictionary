@@ -9,18 +9,16 @@ import UIKit
 
 class ButtonViewController: UIViewController {
     
+    // MARK: - Properties
+    
     private lazy var buttonNormal: UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.isPointerInteractionEnabled = true
         button.setTitle("Button", for: .normal)
         button.backgroundColor = .systemBlue
         button.addTarget(self, action: #selector(tap), for: UIControl.Event.touchUpInside)
         return button
     }()
-    
-    @objc func tap() {
-        print("tap!")
-    }
     
     private let buttonDisabled: UIButton = {
         let button = UIButton()
@@ -29,12 +27,21 @@ class ButtonViewController: UIViewController {
         return button
     }()
 
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         render()
         buttonAction()
         configUI()
     }
+    
+    // MARK: - Actions
+    
+    @objc func tap() {
+        print("tap!")
+    }
+    
+    // MARK: - Helpers
     
     private func render() {
         view.addSubview(buttonNormal)

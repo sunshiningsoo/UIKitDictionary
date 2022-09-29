@@ -22,6 +22,7 @@
 		DFDC1DD6288EB780001EE52B /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */; };
 		DFE8634C28D1F25800F975F6 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8634B28D1F25800F975F6 /* StackViewController.swift */; };
 		DFE8635E28D8AEC400F975F6 /* AboutFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8635D28D8AEC400F975F6 /* AboutFontViewController.swift */; };
+		DFFFD8B128E568A70027D0D8 /* ButtonPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFFD8B028E568A60027D0D8 /* ButtonPracticeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		DFE8634B28D1F25800F975F6 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		DFE8635D28D8AEC400F975F6 /* AboutFontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFontViewController.swift; sourceTree = "<group>"; };
+		DFFFD8B028E568A60027D0D8 /* ButtonPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPracticeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		DF50567B2884586900E6F8AA /* UIKitDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				DFFFD8AD28E562320027D0D8 /* Button */,
 				DFE8635C28D8AEAA00F975F6 /* Font */,
 				DF22392528D1F21100E2E075 /* StackView */,
 				DF3F8C3028BB5E3400D48913 /* imagePicker */,
@@ -130,7 +133,6 @@
 				DF5056872884586B00E6F8AA /* LaunchScreen.storyboard */,
 				DF50568A2884586B00E6F8AA /* Info.plist */,
 				DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */,
-				DF479F50289D305400DA2E2B /* ButtonViewController.swift */,
 				DF479F72289FDF5A00DA2E2B /* ClosurePrac.playground */,
 			);
 			path = UIKitDictionary;
@@ -142,6 +144,15 @@
 				DFE8635D28D8AEC400F975F6 /* AboutFontViewController.swift */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		DFFFD8AD28E562320027D0D8 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				DF479F50289D305400DA2E2B /* ButtonViewController.swift */,
+				DFFFD8B028E568A60027D0D8 /* ButtonPracticeViewController.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF050B1228A295B100A5912D /* SecondViewController.swift in Sources */,
+				DFFFD8B128E568A70027D0D8 /* ButtonPracticeViewController.swift in Sources */,
 				DF5056812884586900E6F8AA /* ViewController.swift in Sources */,
 				DF050B1028A293E100A5912D /* DelegateProtocolViewController.swift in Sources */,
 				DF50567D2884586900E6F8AA /* AppDelegate.swift in Sources */,
