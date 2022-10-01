@@ -23,6 +23,7 @@
 		DFE8634C28D1F25800F975F6 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8634B28D1F25800F975F6 /* StackViewController.swift */; };
 		DFE8635E28D8AEC400F975F6 /* AboutFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8635D28D8AEC400F975F6 /* AboutFontViewController.swift */; };
 		DFFFD8B128E568A70027D0D8 /* ButtonPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFFD8B028E568A60027D0D8 /* ButtonPracticeViewController.swift */; };
+		DFFFD8D428E886500027D0D8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFFD8D328E886500027D0D8 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		DFE8634B28D1F25800F975F6 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		DFE8635D28D8AEC400F975F6 /* AboutFontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFontViewController.swift; sourceTree = "<group>"; };
 		DFFFD8B028E568A60027D0D8 /* ButtonPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPracticeViewController.swift; sourceTree = "<group>"; };
+		DFFFD8D328E886500027D0D8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		DF50567B2884586900E6F8AA /* UIKitDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				DFFFD8D228E8863C0027D0D8 /* MapKit */,
 				DFFFD8AD28E562320027D0D8 /* Button */,
 				DFE8635C28D8AEAA00F975F6 /* Font */,
 				DF22392528D1F21100E2E075 /* StackView */,
@@ -153,6 +156,14 @@
 				DFFFD8B028E568A60027D0D8 /* ButtonPracticeViewController.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		DFFFD8D228E8863C0027D0D8 /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				DFFFD8D328E886500027D0D8 /* MapViewController.swift */,
+			);
+			path = MapKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +249,7 @@
 				DF479F51289D305400DA2E2B /* ButtonViewController.swift in Sources */,
 				DFE8634C28D1F25800F975F6 /* StackViewController.swift in Sources */,
 				DF050B1928A3E5B800A5912D /* ViewLifeCycleViewController.swift in Sources */,
+				DFFFD8D428E886500027D0D8 /* MapViewController.swift in Sources */,
 				DFDC1DD6288EB780001EE52B /* ScrollViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
