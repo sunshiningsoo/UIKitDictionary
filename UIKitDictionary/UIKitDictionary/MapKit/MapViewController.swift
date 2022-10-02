@@ -12,6 +12,11 @@ class MapViewController: UIViewController {
     
     let map: MKMapView = {
         let map = MKMapView()
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = CLLocationCoordinate2D(latitude: 33.533215170493584, longitude: 126.63091291334615)
+        annotation.title = "오피스 제주"
+        annotation.subtitle = "조천점"
+        map.addAnnotations([annotation])
         return map
     }()
 
