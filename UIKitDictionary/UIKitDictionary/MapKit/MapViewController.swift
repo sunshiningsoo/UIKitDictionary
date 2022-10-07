@@ -12,6 +12,14 @@ class MapViewController: UIViewController {
     
     // MARK: - Properties
     
+    let moveButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Move To next Page", for: .normal)
+        button.tintColor = .white
+        button.backgroundColor = .systemBlue
+        return button
+    }()
+    
     let anno1: MKPointAnnotation = {
         let annotation = MKPointAnnotation()
         annotation.coordinate = CLLocationCoordinate2D(latitude: 33.533215170493584, longitude: 126.63091291334615)
@@ -28,9 +36,8 @@ class MapViewController: UIViewController {
         return annotation
     }()
     
-    lazy var map: MKMapView = {
+    let map: MKMapView = {
         let map = MKMapView()
-        map.addAnnotations([anno1, anno2])
         return map
     }()
 
@@ -38,8 +45,21 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        configureMap()
+        configureButton()
+    }
+    
+    // MARK: - Actions
+    
+    @objc func moveRegion() {
+        map.setRegion(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 10, longitude: 10), span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)), animated: true)
+    }
+    
+    // MARK: - Helpers
+    
+    func configureMap() {
         map.register(MKAnnotationViewPractice.self, forAnnotationViewWithReuseIdentifier: "cell")
+        map.addAnnotations([anno1, anno2])
         
         map.delegate = self
         view.addSubview(map)
@@ -50,6 +70,15 @@ class MapViewController: UIViewController {
         map.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
     }
     
+    func configureButton() {
+        view.addSubview(moveButton)
+        moveButton.addTarget(self, action: #selector(moveRegion), for: .touchUpInside)
+        moveButton.translatesAutoresizingMaskIntoConstraints = false
+        moveButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 24).isActive = true
+        moveButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24).isActive = true
+        moveButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30).isActive = true
+        moveButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+    }
 
 }
 
@@ -58,7 +87,6 @@ class MapViewController: UIViewController {
 extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         print("view Tapped: \(view.annotation?.title)")
-
     }
     
     func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
@@ -72,7 +100,7 @@ extension MapViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         guard let cell = mapView.dequeueReusableAnnotationView(withIdentifier: "cell") as? MKAnnotationViewPractice else { return MKAnnotationView() }
-        cell.titleTemp = anno1.title
+        cell.titleTemp = annotation.title ?? ""
         return cell
     }
     
