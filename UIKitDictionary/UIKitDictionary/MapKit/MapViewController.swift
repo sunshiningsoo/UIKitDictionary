@@ -58,7 +58,7 @@ class MapViewController: UIViewController {
     // MARK: - Helpers
     
     func configureMap() {
-        map.register(MKAnnotationViewPractice.self, forAnnotationViewWithReuseIdentifier: "cell")
+        map.register(MKAnnotationViewPractice.self, forAnnotationViewWithReuseIdentifier: MKAnnotationViewPractice.cellIdentifier)
         map.addAnnotations([anno1, anno2])
         
         map.delegate = self
@@ -99,7 +99,7 @@ extension MapViewController: MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        guard let cell = mapView.dequeueReusableAnnotationView(withIdentifier: "cell") as? MKAnnotationViewPractice else { return MKAnnotationView() }
+        guard let cell = mapView.dequeueReusableAnnotationView(withIdentifier: MKAnnotationViewPractice.cellIdentifier) as? MKAnnotationViewPractice else { return MKAnnotationView() }
         cell.titleTemp = annotation.title ?? ""
         return cell
     }
