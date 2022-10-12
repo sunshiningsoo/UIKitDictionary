@@ -47,6 +47,8 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         configureMap()
         configureButton()
+        
+        map.register(OfficeAnnotationView.self, forAnnotationViewWithReuseIdentifier: OfficeAnnotationView.cellIdentifier)
     }
     
     // MARK: - Actions
@@ -87,18 +89,34 @@ class MapViewController: UIViewController {
 extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         print("view Tapped: \(view.annotation?.title)")
+        let controller = OfficeDetailViewController()
+        controller.viewTitle.text = view.annotation?.title!
+        controller.sheetPresentationController?.detents = [.medium()]
+        present(controller, animated: true)
     }
     
     func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
         print("view deinitTapped: \(view.annotation?.title)")
     }
     
-    func mapView(_ mapView: MKMapView, clusterAnnotationForMemberAnnotations memberAnnotations: [MKAnnotation]) -> MKClusterAnnotation {
-        let cluster = MKClusterAnnotation(memberAnnotations: [anno1, anno2])
-        return cluster
-    }
+//    func mapView(_ mapView: MKMapView, clusterAnnotationForMemberAnnotations memberAnnotations: [MKAnnotation]) -> MKClusterAnnotation {
+//        let cluster = MKClusterAnnotation(memberAnnotations: [anno1, anno2])
+//        return cluster
+//    }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//        if let annotation = annotation as? MKAnnotationViewPractice {
+//            switch annotation.titleTemp {
+//            case "오피스":
+//                return mapView.dequeueReusableAnnotationView(withIdentifier: OfficeAnnotationView.cellIdentifier)
+//            default:
+//                return MKAnnotationView()
+//            }
+//
+//        } else {
+//            return MKAnnotationView()
+//        }
+        
         guard let cell = mapView.dequeueReusableAnnotationView(withIdentifier: MKAnnotationViewPractice.cellIdentifier) as? MKAnnotationViewPractice else { return MKAnnotationView() }
         cell.titleTemp = annotation.title ?? ""
         return cell

@@ -22,6 +22,13 @@
 		DFDC1DD6288EB780001EE52B /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */; };
 		DFE8634C28D1F25800F975F6 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8634B28D1F25800F975F6 /* StackViewController.swift */; };
 		DFE8635E28D8AEC400F975F6 /* AboutFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8635D28D8AEC400F975F6 /* AboutFontViewController.swift */; };
+		DFF7F92028F44FF900804BEE /* OfficeAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7F91F28F44FF900804BEE /* OfficeAnnotationView.swift */; };
+		DFF7F92228F54C5A00804BEE /* OfficeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7F92128F54C5A00804BEE /* OfficeDetailViewController.swift */; };
+		DFF7F92528F5591900804BEE /* CustomClusteringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7F92428F5591900804BEE /* CustomClusteringViewController.swift */; };
+		DFF7F92728F559F300804BEE /* Office1AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7F92628F559F300804BEE /* Office1AnnotationView.swift */; };
+		DFF7F92928F559FF00804BEE /* ActivityAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7F92828F559FF00804BEE /* ActivityAnnotationView.swift */; };
+		DFF7F92B28F55BFB00804BEE /* ClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7F92A28F55BFB00804BEE /* ClusterAnnotationView.swift */; };
+		DFF7F92D28F55F5400804BEE /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7F92C28F55F5400804BEE /* TestData.swift */; };
 		DFFFD8B128E568A70027D0D8 /* ButtonPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFFD8B028E568A60027D0D8 /* ButtonPracticeViewController.swift */; };
 		DFFFD8D428E886500027D0D8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFFD8D328E886500027D0D8 /* MapViewController.swift */; };
 		DFFFD8D728EC84A20027D0D8 /* MKAnnotationViewPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFFD8D628EC84A20027D0D8 /* MKAnnotationViewPractice.swift */; };
@@ -46,6 +53,13 @@
 		DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		DFE8634B28D1F25800F975F6 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		DFE8635D28D8AEC400F975F6 /* AboutFontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFontViewController.swift; sourceTree = "<group>"; };
+		DFF7F91F28F44FF900804BEE /* OfficeAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeAnnotationView.swift; sourceTree = "<group>"; };
+		DFF7F92128F54C5A00804BEE /* OfficeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeDetailViewController.swift; sourceTree = "<group>"; };
+		DFF7F92428F5591900804BEE /* CustomClusteringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClusteringViewController.swift; sourceTree = "<group>"; };
+		DFF7F92628F559F300804BEE /* Office1AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Office1AnnotationView.swift; sourceTree = "<group>"; };
+		DFF7F92828F559FF00804BEE /* ActivityAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityAnnotationView.swift; sourceTree = "<group>"; };
+		DFF7F92A28F55BFB00804BEE /* ClusterAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterAnnotationView.swift; sourceTree = "<group>"; };
+		DFF7F92C28F55F5400804BEE /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		DFFFD8B028E568A60027D0D8 /* ButtonPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPracticeViewController.swift; sourceTree = "<group>"; };
 		DFFFD8D328E886500027D0D8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DFFFD8D628EC84A20027D0D8 /* MKAnnotationViewPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKAnnotationViewPractice.swift; sourceTree = "<group>"; };
@@ -151,6 +165,18 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		DFF7F92328F558FD00804BEE /* CustomClusteringAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				DFF7F92428F5591900804BEE /* CustomClusteringViewController.swift */,
+				DFF7F92628F559F300804BEE /* Office1AnnotationView.swift */,
+				DFF7F92828F559FF00804BEE /* ActivityAnnotationView.swift */,
+				DFF7F92A28F55BFB00804BEE /* ClusterAnnotationView.swift */,
+				DFF7F92C28F55F5400804BEE /* TestData.swift */,
+			);
+			path = CustomClusteringAnnotation;
+			sourceTree = "<group>";
+		};
 		DFFFD8AD28E562320027D0D8 /* Button */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,8 +189,11 @@
 		DFFFD8D228E8863C0027D0D8 /* MapKit */ = {
 			isa = PBXGroup;
 			children = (
+				DFF7F92328F558FD00804BEE /* CustomClusteringAnnotation */,
 				DFFFD8D328E886500027D0D8 /* MapViewController.swift */,
 				DFFFD8D628EC84A20027D0D8 /* MKAnnotationViewPractice.swift */,
+				DFF7F91F28F44FF900804BEE /* OfficeAnnotationView.swift */,
+				DFF7F92128F54C5A00804BEE /* OfficeDetailViewController.swift */,
 			);
 			path = MapKit;
 			sourceTree = "<group>";
@@ -241,14 +270,21 @@
 			files = (
 				DF050B1228A295B100A5912D /* SecondViewController.swift in Sources */,
 				DFFFD8B128E568A70027D0D8 /* ButtonPracticeViewController.swift in Sources */,
+				DFF7F92528F5591900804BEE /* CustomClusteringViewController.swift in Sources */,
+				DFF7F92728F559F300804BEE /* Office1AnnotationView.swift in Sources */,
 				DFFFD8D728EC84A20027D0D8 /* MKAnnotationViewPractice.swift in Sources */,
 				DF5056812884586900E6F8AA /* ViewController.swift in Sources */,
 				DF050B1028A293E100A5912D /* DelegateProtocolViewController.swift in Sources */,
 				DF50567D2884586900E6F8AA /* AppDelegate.swift in Sources */,
 				DFE8635E28D8AEC400F975F6 /* AboutFontViewController.swift in Sources */,
 				DF0445DB2891A572004AD0FF /* DataViewController.swift in Sources */,
+				DFF7F92D28F55F5400804BEE /* TestData.swift in Sources */,
 				DF3F8C3228BB5E5B00D48913 /* ImagePickerViewController.swift in Sources */,
 				DF050B1B28A3E7F900A5912D /* NextViewController.swift in Sources */,
+				DFF7F92228F54C5A00804BEE /* OfficeDetailViewController.swift in Sources */,
+				DFF7F92028F44FF900804BEE /* OfficeAnnotationView.swift in Sources */,
+				DFF7F92B28F55BFB00804BEE /* ClusterAnnotationView.swift in Sources */,
+				DFF7F92928F559FF00804BEE /* ActivityAnnotationView.swift in Sources */,
 				DF50567F2884586900E6F8AA /* SceneDelegate.swift in Sources */,
 				DF479F51289D305400DA2E2B /* ButtonViewController.swift in Sources */,
 				DFE8634C28D1F25800F975F6 /* StackViewController.swift in Sources */,

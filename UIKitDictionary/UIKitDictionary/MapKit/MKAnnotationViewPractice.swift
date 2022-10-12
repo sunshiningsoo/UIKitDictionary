@@ -42,7 +42,7 @@ class MKAnnotationViewPractice: MKAnnotationView {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
         configureUI()
         
-        self.clusteringIdentifier = "none"
+        self.clusteringIdentifier = OfficeAnnotationView.cellIdentifier
         self.isExclusiveTouch = false // clustering 되었을때, 개별의 터치가 아닌 종합적 데이터 터치를 가능하게 해준다.
     }
     
