@@ -19,6 +19,18 @@
 		DF5056812884586900E6F8AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5056802884586900E6F8AA /* ViewController.swift */; };
 		DF5056862884586B00E6F8AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5056852884586B00E6F8AA /* Assets.xcassets */; };
 		DF5056892884586B00E6F8AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5056872884586B00E6F8AA /* LaunchScreen.storyboard */; };
+		DF96186328F9005100E21D30 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF96186228F9005100E21D30 /* Header.swift */; };
+		DF96186528F931E300E21D30 /* CompositionalDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF96186428F931E300E21D30 /* CompositionalDummy.swift */; };
+		DF96186928F9460F00E21D30 /* AnnotationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF96186828F9460F00E21D30 /* AnnotationDetailViewController.swift */; };
+		DF96186C28F94B2E00E21D30 /* DefaultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF96186B28F94B2E00E21D30 /* DefaultCollectionViewCell.swift */; };
+		DF96186E28F94C9400E21D30 /* TitleCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF96186D28F94C9400E21D30 /* TitleCollectionReusableView.swift */; };
+		DF96187028FA803900E21D30 /* DetailCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF96186F28FA803900E21D30 /* DetailCellType.swift */; };
+		DF96187228FA8DFE00E21D30 /* ReusableCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF96187128FA8DFE00E21D30 /* ReusableCellType.swift */; };
+		DF96187428FA914700E21D30 /* MoreInformationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF96187328FA914700E21D30 /* MoreInformationCollectionViewCell.swift */; };
+		DF96187628FA953F00E21D30 /* MoreInformationReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF96187528FA953F00E21D30 /* MoreInformationReusableView.swift */; };
+		DFA9D12A28F69865000CD26A /* CompositionalDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA9D12928F69865000CD26A /* CompositionalDetailCollectionViewCell.swift */; };
+		DFAD3E7428F6903600E03C8B /* CompositionalCollectionViewLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD3E7328F6903600E03C8B /* CompositionalCollectionViewLayoutViewController.swift */; };
+		DFAD3E7628F6942D00E03C8B /* CompositionalHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD3E7528F6942D00E03C8B /* CompositionalHeaderCollectionViewCell.swift */; };
 		DFDC1DD6288EB780001EE52B /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */; };
 		DFE8634C28D1F25800F975F6 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8634B28D1F25800F975F6 /* StackViewController.swift */; };
 		DFE8635E28D8AEC400F975F6 /* AboutFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8635D28D8AEC400F975F6 /* AboutFontViewController.swift */; };
@@ -50,6 +62,18 @@
 		DF5056852884586B00E6F8AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF5056882884586B00E6F8AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF50568A2884586B00E6F8AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF96186228F9005100E21D30 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		DF96186428F931E300E21D30 /* CompositionalDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalDummy.swift; sourceTree = "<group>"; };
+		DF96186828F9460F00E21D30 /* AnnotationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationDetailViewController.swift; sourceTree = "<group>"; };
+		DF96186B28F94B2E00E21D30 /* DefaultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF96186D28F94C9400E21D30 /* TitleCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionReusableView.swift; sourceTree = "<group>"; };
+		DF96186F28FA803900E21D30 /* DetailCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCellType.swift; sourceTree = "<group>"; };
+		DF96187128FA8DFE00E21D30 /* ReusableCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCellType.swift; sourceTree = "<group>"; };
+		DF96187328FA914700E21D30 /* MoreInformationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInformationCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF96187528FA953F00E21D30 /* MoreInformationReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInformationReusableView.swift; sourceTree = "<group>"; };
+		DFA9D12928F69865000CD26A /* CompositionalDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		DFAD3E7328F6903600E03C8B /* CompositionalCollectionViewLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalCollectionViewLayoutViewController.swift; sourceTree = "<group>"; };
+		DFAD3E7528F6942D00E03C8B /* CompositionalHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		DFE8634B28D1F25800F975F6 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		DFE8635D28D8AEC400F975F6 /* AboutFontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFontViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +161,7 @@
 		DF50567B2884586900E6F8AA /* UIKitDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				DFF7F92E28F68E9200804BEE /* CompositionalLayoutCollectionView */,
 				DFFFD8D228E8863C0027D0D8 /* MapKit */,
 				DFFFD8AD28E562320027D0D8 /* Button */,
 				DFE8635C28D8AEAA00F975F6 /* Font */,
@@ -157,6 +182,20 @@
 			path = UIKitDictionary;
 			sourceTree = "<group>";
 		};
+		DF96186A28F94B0900E21D30 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				DF96186828F9460F00E21D30 /* AnnotationDetailViewController.swift */,
+				DF96186D28F94C9400E21D30 /* TitleCollectionReusableView.swift */,
+				DF96186B28F94B2E00E21D30 /* DefaultCollectionViewCell.swift */,
+				DF96187528FA953F00E21D30 /* MoreInformationReusableView.swift */,
+				DF96187328FA914700E21D30 /* MoreInformationCollectionViewCell.swift */,
+				DF96186F28FA803900E21D30 /* DetailCellType.swift */,
+				DF96187128FA8DFE00E21D30 /* ReusableCellType.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
 		DFE8635C28D8AEAA00F975F6 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +207,7 @@
 		DFF7F92328F558FD00804BEE /* CustomClusteringAnnotation */ = {
 			isa = PBXGroup;
 			children = (
+				DF96186A28F94B0900E21D30 /* DetailView */,
 				DFF7F92428F5591900804BEE /* CustomClusteringViewController.swift */,
 				DFF7F92628F559F300804BEE /* Office1AnnotationView.swift */,
 				DFF7F92828F559FF00804BEE /* ActivityAnnotationView.swift */,
@@ -175,6 +215,18 @@
 				DFF7F92C28F55F5400804BEE /* TestData.swift */,
 			);
 			path = CustomClusteringAnnotation;
+			sourceTree = "<group>";
+		};
+		DFF7F92E28F68E9200804BEE /* CompositionalLayoutCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD3E7328F6903600E03C8B /* CompositionalCollectionViewLayoutViewController.swift */,
+				DFAD3E7528F6942D00E03C8B /* CompositionalHeaderCollectionViewCell.swift */,
+				DFA9D12928F69865000CD26A /* CompositionalDetailCollectionViewCell.swift */,
+				DF96186228F9005100E21D30 /* Header.swift */,
+				DF96186428F931E300E21D30 /* CompositionalDummy.swift */,
+			);
+			path = CompositionalLayoutCollectionView;
 			sourceTree = "<group>";
 		};
 		DFFFD8AD28E562320027D0D8 /* Button */ = {
@@ -268,27 +320,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF96186528F931E300E21D30 /* CompositionalDummy.swift in Sources */,
 				DF050B1228A295B100A5912D /* SecondViewController.swift in Sources */,
+				DF96187428FA914700E21D30 /* MoreInformationCollectionViewCell.swift in Sources */,
 				DFFFD8B128E568A70027D0D8 /* ButtonPracticeViewController.swift in Sources */,
 				DFF7F92528F5591900804BEE /* CustomClusteringViewController.swift in Sources */,
+				DF96187628FA953F00E21D30 /* MoreInformationReusableView.swift in Sources */,
 				DFF7F92728F559F300804BEE /* Office1AnnotationView.swift in Sources */,
 				DFFFD8D728EC84A20027D0D8 /* MKAnnotationViewPractice.swift in Sources */,
+				DF96186928F9460F00E21D30 /* AnnotationDetailViewController.swift in Sources */,
 				DF5056812884586900E6F8AA /* ViewController.swift in Sources */,
+				DF96186C28F94B2E00E21D30 /* DefaultCollectionViewCell.swift in Sources */,
 				DF050B1028A293E100A5912D /* DelegateProtocolViewController.swift in Sources */,
 				DF50567D2884586900E6F8AA /* AppDelegate.swift in Sources */,
+				DF96187028FA803900E21D30 /* DetailCellType.swift in Sources */,
 				DFE8635E28D8AEC400F975F6 /* AboutFontViewController.swift in Sources */,
 				DF0445DB2891A572004AD0FF /* DataViewController.swift in Sources */,
+				DFAD3E7628F6942D00E03C8B /* CompositionalHeaderCollectionViewCell.swift in Sources */,
 				DFF7F92D28F55F5400804BEE /* TestData.swift in Sources */,
 				DF3F8C3228BB5E5B00D48913 /* ImagePickerViewController.swift in Sources */,
 				DF050B1B28A3E7F900A5912D /* NextViewController.swift in Sources */,
+				DFAD3E7428F6903600E03C8B /* CompositionalCollectionViewLayoutViewController.swift in Sources */,
 				DFF7F92228F54C5A00804BEE /* OfficeDetailViewController.swift in Sources */,
 				DFF7F92028F44FF900804BEE /* OfficeAnnotationView.swift in Sources */,
 				DFF7F92B28F55BFB00804BEE /* ClusterAnnotationView.swift in Sources */,
 				DFF7F92928F559FF00804BEE /* ActivityAnnotationView.swift in Sources */,
+				DF96186328F9005100E21D30 /* Header.swift in Sources */,
 				DF50567F2884586900E6F8AA /* SceneDelegate.swift in Sources */,
 				DF479F51289D305400DA2E2B /* ButtonViewController.swift in Sources */,
+				DFA9D12A28F69865000CD26A /* CompositionalDetailCollectionViewCell.swift in Sources */,
 				DFE8634C28D1F25800F975F6 /* StackViewController.swift in Sources */,
+				DF96186E28F94C9400E21D30 /* TitleCollectionReusableView.swift in Sources */,
 				DF050B1928A3E5B800A5912D /* ViewLifeCycleViewController.swift in Sources */,
+				DF96187228FA8DFE00E21D30 /* ReusableCellType.swift in Sources */,
 				DFFFD8D428E886500027D0D8 /* MapViewController.swift in Sources */,
 				DFDC1DD6288EB780001EE52B /* ScrollViewController.swift in Sources */,
 			);

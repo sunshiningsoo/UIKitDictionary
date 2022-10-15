@@ -28,6 +28,7 @@ class ClusterAnnotationView: MKAnnotationView {
                 if count(rideType: .bicycle) > 0 {
                     image = UIImage(systemName: "pencil")
                     frame = CGRect(origin: .zero, size: CGSize(width: 40, height: 40))
+                    print(count(rideType: .bicycle))
                 } else {
                     image = UIImage(systemName: "bicycle")
                     frame = CGRect(origin: .zero, size: CGSize(width: 40, height: 40))

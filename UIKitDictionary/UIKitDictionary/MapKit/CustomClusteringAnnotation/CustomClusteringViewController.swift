@@ -19,17 +19,15 @@ class CustomClusteringViewController: UIViewController {
         return map
     }()
     
-    let office1: Office1AnnotationView = {
-        let office = Office1AnnotationView()
-        return office
-    }()
-    
     // MARK: - LifeCycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureMap()
     }
+    
+    // MARK: - Actions
+
     
     // MARK: - Helpers
     
@@ -64,5 +62,29 @@ extension CustomClusteringViewController: MKMapViewDelegate {
         case .bicycle:
             return ActivityAnnotationView(annotation: annotation, reuseIdentifier: ActivityAnnotationView.identifier)
         }
+    }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        if let tempView = view as? ClusterAnnotationView {
+            return print("THIS IS NOT A ANNOTATIONVIEW")
+        }
+        guard let view = view.annotation else { return }
+        map1.setRegion(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: view.coordinate.latitude - 0.25, longitude: view.coordinate.longitude), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)), animated: true)
+        let controller = AnnotationDetailViewController()
+        controller.delegate = self
+        controller.selectedAnnotation = view
+        
+        controller.sheetPresentationController?.detents = [.medium(), .large()]
+        present(controller, animated: true)
+        
+    }
+    
+}
+
+// MARK: - DeselectAnnotation
+extension CustomClusteringViewController: DeselectAnnotation {
+    func annotationDeselect(annotation: MKAnnotation) {
+        // TODO: - annotation을 지금은 안쓰고 있지만, Detail뷰로 넘겨줄때에는 꼭 필요한 정보라고 생각함
+        map1.selectedAnnotations = []
     }
 }

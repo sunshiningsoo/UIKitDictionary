@@ -18,6 +18,7 @@ class Office1AnnotationView: MKAnnotationView {
         
         frame = CGRect(origin: .zero, size: CGSize(width: 40, height: 40))
         backgroundColor = .blue
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
