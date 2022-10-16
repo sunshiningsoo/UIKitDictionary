@@ -7,15 +7,15 @@
 
 import UIKit
 
-protocol PeopleListDelegate {
-    func collectionTapped(collectionViewCell: UICollectionViewCell, index: Int)
+protocol CheckIn {
+    func checkIn()
 }
 
 class DefaultCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Properties
     
-//    var delegate: PeopleListDelegate?
+    var delegate: CheckIn?
     
     static let identifier: String = String(describing: DefaultCollectionViewCell.self)
     
@@ -53,6 +53,13 @@ class DefaultCollectionViewCell: UICollectionViewCell {
         return image
     }()
     
+    lazy var checkInButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("체크인하기", for: .normal)
+        button.addTarget(self, action: #selector(checkIn), for: .touchUpInside)
+        return button
+    }()
+    
     
     // MARK: - LifeCycle
     
@@ -63,7 +70,7 @@ class DefaultCollectionViewCell: UICollectionViewCell {
         
         configureDate()
         configureImage()
-        
+        configureCheckInButton()
     }
     
     required init?(coder: NSCoder) {
@@ -71,6 +78,10 @@ class DefaultCollectionViewCell: UICollectionViewCell {
     }
     
     // MARK: - Actions
+    
+    @objc func checkIn() {
+        delegate?.checkIn()
+    }
     
     
     // MARK: - Helpers
@@ -106,6 +117,14 @@ class DefaultCollectionViewCell: UICollectionViewCell {
         date.translatesAutoresizingMaskIntoConstraints = false
         date.topAnchor.constraint(equalTo: self.topAnchor, constant: 18).isActive = true
         date.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 18).isActive = true
+    }
+    
+    func configureCheckInButton() {
+        
+        self.addSubview(checkInButton)
+        checkInButton.translatesAutoresizingMaskIntoConstraints = false
+        checkInButton.leftAnchor.constraint(equalTo: profileImage3.rightAnchor, constant: 20).isActive = true
+        checkInButton.topAnchor.constraint(equalTo: profileImage3.topAnchor).isActive = true
     }
     
 }

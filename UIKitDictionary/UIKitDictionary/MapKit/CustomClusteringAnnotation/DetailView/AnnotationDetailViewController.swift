@@ -49,7 +49,7 @@ class AnnotationDetailViewController: UIViewController {
                 let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
                 item.contentInsets.bottom = 1
                 
-                let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item])
+                let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .estimated(100)), subitems: [item])
                 let section = NSCollectionLayoutSection(group: group)
                 
                 section.contentInsets.leading = 17
@@ -108,7 +108,7 @@ class AnnotationDetailViewController: UIViewController {
 extension AnnotationDetailViewController: UICollectionViewDelegate {
     // Cell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell = UICollectionViewCell()
+        var cell: UICollectionViewCell?
         switch indexPath.section {
         case 0:
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: DefaultCollectionViewCell.identifier, for: indexPath) as! DefaultCollectionViewCell
@@ -117,7 +117,10 @@ extension AnnotationDetailViewController: UICollectionViewDelegate {
         default:
             print("1")
         }
-        
+        guard let cell = cell else { return UICollectionViewCell() }
+        if let cell = cell as? DefaultCollectionViewCell {
+            cell.delegate = self
+        }
         return cell
     }
     
@@ -138,7 +141,6 @@ extension AnnotationDetailViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let controller = UIViewController()
         controller.view.backgroundColor = .systemBackground
-//        controller.modalPresentationStyle = .fullScreen
         present(controller, animated: true)
         print(indexPath.section)
     }
@@ -158,4 +160,10 @@ extension AnnotationDetailViewController: UICollectionViewDataSource {
         return 2
     }
     
+}
+
+extension AnnotationDetailViewController: CheckIn {
+    func checkIn() {
+        print("checkin")
+    }
 }

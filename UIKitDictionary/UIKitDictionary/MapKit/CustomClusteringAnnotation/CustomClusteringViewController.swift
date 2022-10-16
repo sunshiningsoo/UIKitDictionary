@@ -11,6 +11,9 @@ import MapKit
 class CustomClusteringViewController: UIViewController {
 
     // MARK: - Properties
+    
+    var manager: CLLocationManager?
+    
     let data = testData.datas
     
     let map1: MKMapView = {
@@ -24,6 +27,15 @@ class CustomClusteringViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureMap()
+        
+        manager = CLLocationManager()
+        guard let manager = manager else {
+            return
+        }
+        manager.delegate = self
+        
+        let circle = MKCircle(center: map1.userLocation.coordinate, radius: 100)
+        map1.addOverlay(circle)
     }
     
     // MARK: - Actions
@@ -88,3 +100,36 @@ extension CustomClusteringViewController: DeselectAnnotation {
         map1.selectedAnnotations = []
     }
 }
+
+extension CustomClusteringViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print(manager.location?.coordinate)
+    }
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        print("CHANGED AUTH")
+        manager.requestAlwaysAuthorization()
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.startUpdatingLocation()
+        
+        guard let location = manager.location else { return print("RETURN !")}
+        let circle = MKCircle(center: location.coordinate, radius: 100)
+        map1.showsUserLocation = true
+        
+        map1.setRegion(MKCoordinateRegion(center: location.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)), animated: true)
+        print(location.coordinate.longitude)
+    }
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        print("RENDERED")
+        let circles = MKCircleRenderer(overlay: overlay)
+        circles.fillColor = .brown
+        circles.lineWidth = 1.0
+        circles.alpha = 0.25
+        
+        return circles
+        
+    }
+    
+}
+
