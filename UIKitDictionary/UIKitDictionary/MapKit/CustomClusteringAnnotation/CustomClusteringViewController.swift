@@ -45,7 +45,7 @@ class CustomClusteringViewController: UIViewController {
     
     func configureMap() {
         view.addSubview(map1)
-        
+//        map1.setRegion(MKCoordinateRegion(center: CLLocationCoordinate2D(), span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)), animated: true)
         map1.register(Office1AnnotationView.self, forAnnotationViewWithReuseIdentifier: Office1AnnotationView.identifier)
         map1.register(ActivityAnnotationView.self, forAnnotationViewWithReuseIdentifier: ActivityAnnotationView.identifier)
         map1.register(ClusterAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultClusterAnnotationViewReuseIdentifier)
@@ -81,13 +81,14 @@ extension CustomClusteringViewController: MKMapViewDelegate {
             return print("THIS IS NOT A ANNOTATIONVIEW")
         }
         guard let view = view.annotation else { return }
-        map1.setRegion(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: view.coordinate.latitude - 0.25, longitude: view.coordinate.longitude), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)), animated: true)
+        map1.setRegion(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: view.coordinate.latitude - 0.25, longitude: view.coordinate.longitude), span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)), animated: true)
         let controller = AnnotationDetailViewController()
         controller.delegate = self
         controller.selectedAnnotation = view
         
         controller.sheetPresentationController?.detents = [.medium(), .large()]
         present(controller, animated: true)
+        
         
     }
     
@@ -116,7 +117,7 @@ extension CustomClusteringViewController: CLLocationManagerDelegate {
         let circle = MKCircle(center: location.coordinate, radius: 100)
         map1.showsUserLocation = true
         
-        map1.setRegion(MKCoordinateRegion(center: location.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)), animated: true)
+//        map1.setRegion(MKCoordinateRegion(center: location.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)), animated: true)
         print(location.coordinate.longitude)
     }
     
@@ -130,6 +131,10 @@ extension CustomClusteringViewController: CLLocationManagerDelegate {
         return circles
         
     }
-    
 }
 
+extension CustomClusteringViewController: UISheetPresentationControllerDelegate {
+    func sheetPresentationControllerDidChangeSelectedDetentIdentifier(_ sheetPresentationController: UISheetPresentationController) {
+//        sheetPresentationController.detents.
+    }
+}

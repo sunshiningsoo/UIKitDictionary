@@ -31,20 +31,23 @@ class MoreInformationCollectionViewCell: UICollectionViewCell {
         stack.addArrangedSubview(phoneNumber)
         stack.axis = .horizontal
         stack.spacing = 30
-        stack.distribution = .fill
+        stack.distribution = .equalCentering
         return stack
     }()
     
     let divider: UIView = {
         let view = UIView()
         view.backgroundColor = .black
-        view.heightAnchor.constraint(equalToConstant: 10).isActive = true
+        view.heightAnchor.constraint(equalToConstant: 1).isActive = true
+//        view.widthAnchor.constraint(equalToConstant: 100).isActive = true
 //        divider.frame = CGRect(origin: .zero, size: CGSize(width: , height: 1))
         return view
     }()
     
     lazy var detailStack: UIStackView = {
-        var stack = UIStackView(arrangedSubviews: [phoneNumberStack, divider, UILabel()])
+        var stack = UIStackView(arrangedSubviews: [phoneNumberStack, divider])
+        divider.leftAnchor.constraint(equalTo: stack.leftAnchor, constant: 10).isActive = true
+        divider.rightAnchor.constraint(equalTo: stack.rightAnchor, constant: -10).isActive = true
         stack.axis = .vertical
         stack.spacing = 10
         stack.distribution = .fillProportionally

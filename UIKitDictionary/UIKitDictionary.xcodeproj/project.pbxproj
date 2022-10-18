@@ -32,6 +32,9 @@
 		DFAD3E7428F6903600E03C8B /* CompositionalCollectionViewLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD3E7328F6903600E03C8B /* CompositionalCollectionViewLayoutViewController.swift */; };
 		DFAD3E7628F6942D00E03C8B /* CompositionalHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD3E7528F6942D00E03C8B /* CompositionalHeaderCollectionViewCell.swift */; };
 		DFDC1DD6288EB780001EE52B /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */; };
+		DFE747C328FE7D0F0048E70A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE747C228FE7D0F0048E70A /* FirstViewController.swift */; };
+		DFE747C528FE7D220048E70A /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE747C428FE7D220048E70A /* ModalViewController.swift */; };
+		DFE747C728FE81A10048E70A /* CustomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE747C628FE81A10048E70A /* CustomStackView.swift */; };
 		DFE8634C28D1F25800F975F6 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8634B28D1F25800F975F6 /* StackViewController.swift */; };
 		DFE8635E28D8AEC400F975F6 /* AboutFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8635D28D8AEC400F975F6 /* AboutFontViewController.swift */; };
 		DFF7F92028F44FF900804BEE /* OfficeAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7F91F28F44FF900804BEE /* OfficeAnnotationView.swift */; };
@@ -75,6 +78,9 @@
 		DFAD3E7328F6903600E03C8B /* CompositionalCollectionViewLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalCollectionViewLayoutViewController.swift; sourceTree = "<group>"; };
 		DFAD3E7528F6942D00E03C8B /* CompositionalHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		DFE747C228FE7D0F0048E70A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		DFE747C428FE7D220048E70A /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		DFE747C628FE81A10048E70A /* CustomStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStackView.swift; sourceTree = "<group>"; };
 		DFE8634B28D1F25800F975F6 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		DFE8635D28D8AEC400F975F6 /* AboutFontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFontViewController.swift; sourceTree = "<group>"; };
 		DFF7F91F28F44FF900804BEE /* OfficeAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeAnnotationView.swift; sourceTree = "<group>"; };
@@ -129,6 +135,7 @@
 		DF22392528D1F21100E2E075 /* StackView */ = {
 			isa = PBXGroup;
 			children = (
+				DFE747C128FE7CFF0048E70A /* StackModal */,
 				DFE8634B28D1F25800F975F6 /* StackViewController.swift */,
 			);
 			path = StackView;
@@ -194,6 +201,16 @@
 				DF96187128FA8DFE00E21D30 /* ReusableCellType.swift */,
 			);
 			path = DetailView;
+			sourceTree = "<group>";
+		};
+		DFE747C128FE7CFF0048E70A /* StackModal */ = {
+			isa = PBXGroup;
+			children = (
+				DFE747C228FE7D0F0048E70A /* FirstViewController.swift */,
+				DFE747C428FE7D220048E70A /* ModalViewController.swift */,
+				DFE747C628FE81A10048E70A /* CustomStackView.swift */,
+			);
+			path = StackModal;
 			sourceTree = "<group>";
 		};
 		DFE8635C28D8AEAA00F975F6 /* Font */ = {
@@ -324,6 +341,7 @@
 				DF050B1228A295B100A5912D /* SecondViewController.swift in Sources */,
 				DF96187428FA914700E21D30 /* MoreInformationCollectionViewCell.swift in Sources */,
 				DFFFD8B128E568A70027D0D8 /* ButtonPracticeViewController.swift in Sources */,
+				DFE747C528FE7D220048E70A /* ModalViewController.swift in Sources */,
 				DFF7F92528F5591900804BEE /* CustomClusteringViewController.swift in Sources */,
 				DF96187628FA953F00E21D30 /* MoreInformationReusableView.swift in Sources */,
 				DFF7F92728F559F300804BEE /* Office1AnnotationView.swift in Sources */,
@@ -347,7 +365,9 @@
 				DFF7F92928F559FF00804BEE /* ActivityAnnotationView.swift in Sources */,
 				DF96186328F9005100E21D30 /* Header.swift in Sources */,
 				DF50567F2884586900E6F8AA /* SceneDelegate.swift in Sources */,
+				DFE747C328FE7D0F0048E70A /* FirstViewController.swift in Sources */,
 				DF479F51289D305400DA2E2B /* ButtonViewController.swift in Sources */,
+				DFE747C728FE81A10048E70A /* CustomStackView.swift in Sources */,
 				DFA9D12A28F69865000CD26A /* CompositionalDetailCollectionViewCell.swift in Sources */,
 				DFE8634C28D1F25800F975F6 /* StackViewController.swift in Sources */,
 				DF96186E28F94C9400E21D30 /* TitleCollectionReusableView.swift in Sources */,

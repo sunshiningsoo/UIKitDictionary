@@ -15,7 +15,7 @@ class Header: UICollectionReusableView {
     var delegate: headerMove?
     let name = UILabel()
     
-    let button: UIButton = {
+    lazy var button: UIButton = {
         let button = UIButton()
         button.setTitle("더보기", for: .normal)
         button.addTarget(self, action: #selector(newPage), for: .touchUpInside)
