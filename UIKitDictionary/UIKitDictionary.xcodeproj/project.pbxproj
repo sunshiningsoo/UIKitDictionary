@@ -48,6 +48,7 @@
 		DFF7F92928F559FF00804BEE /* ActivityAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7F92828F559FF00804BEE /* ActivityAnnotationView.swift */; };
 		DFF7F92B28F55BFB00804BEE /* ClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7F92A28F55BFB00804BEE /* ClusterAnnotationView.swift */; };
 		DFF7F92D28F55F5400804BEE /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7F92C28F55F5400804BEE /* TestData.swift */; };
+		DFFBDB682966FBC50075A144 /* DiffableDataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFBDB672966FBC50075A144 /* DiffableDataSourceViewController.swift */; };
 		DFFFD8B128E568A70027D0D8 /* ButtonPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFFD8B028E568A60027D0D8 /* ButtonPracticeViewController.swift */; };
 		DFFFD8D428E886500027D0D8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFFD8D328E886500027D0D8 /* MapViewController.swift */; };
 		DFFFD8D728EC84A20027D0D8 /* MKAnnotationViewPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFFD8D628EC84A20027D0D8 /* MKAnnotationViewPractice.swift */; };
@@ -98,6 +99,7 @@
 		DFF7F92828F559FF00804BEE /* ActivityAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityAnnotationView.swift; sourceTree = "<group>"; };
 		DFF7F92A28F55BFB00804BEE /* ClusterAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterAnnotationView.swift; sourceTree = "<group>"; };
 		DFF7F92C28F55F5400804BEE /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		DFFBDB672966FBC50075A144 /* DiffableDataSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableDataSourceViewController.swift; sourceTree = "<group>"; };
 		DFFFD8B028E568A60027D0D8 /* ButtonPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPracticeViewController.swift; sourceTree = "<group>"; };
 		DFFFD8D328E886500027D0D8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DFFFD8D628EC84A20027D0D8 /* MKAnnotationViewPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKAnnotationViewPractice.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 		DF50567B2884586900E6F8AA /* UIKitDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				DFFBDB662966FB6E0075A144 /* DiffableDataSource */,
 				DFA6BDBC294C28FB004E0FC4 /* SwiftUI+UIKit */,
 				DFF460DF291FD72E001D8CEC /* CollectionViewDynamicHeight */,
 				DFF7F92E28F68E9200804BEE /* CompositionalLayoutCollectionView */,
@@ -272,6 +275,14 @@
 				DF96186428F931E300E21D30 /* CompositionalDummy.swift */,
 			);
 			path = CompositionalLayoutCollectionView;
+			sourceTree = "<group>";
+		};
+		DFFBDB662966FB6E0075A144 /* DiffableDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBDB672966FBC50075A144 /* DiffableDataSourceViewController.swift */,
+			);
+			path = DiffableDataSource;
 			sourceTree = "<group>";
 		};
 		DFFFD8AD28E562320027D0D8 /* Button */ = {
@@ -398,6 +409,7 @@
 				DF96186328F9005100E21D30 /* Header.swift in Sources */,
 				DF50567F2884586900E6F8AA /* SceneDelegate.swift in Sources */,
 				DFE747C328FE7D0F0048E70A /* FirstViewController.swift in Sources */,
+				DFFBDB682966FBC50075A144 /* DiffableDataSourceViewController.swift in Sources */,
 				DF479F51289D305400DA2E2B /* ButtonViewController.swift in Sources */,
 				DFE747C728FE81A10048E70A /* CustomStackView.swift in Sources */,
 				DFA9D12A28F69865000CD26A /* CompositionalDetailCollectionViewCell.swift in Sources */,
