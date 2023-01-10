@@ -49,6 +49,7 @@
 		DFF7F92B28F55BFB00804BEE /* ClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7F92A28F55BFB00804BEE /* ClusterAnnotationView.swift */; };
 		DFF7F92D28F55F5400804BEE /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7F92C28F55F5400804BEE /* TestData.swift */; };
 		DFFBDB682966FBC50075A144 /* DiffableDataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFBDB672966FBC50075A144 /* DiffableDataSourceViewController.swift */; };
+		DFFBDB6C296D1D990075A144 /* ConcurrentQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFBDB6B296D1D990075A144 /* ConcurrentQueueViewController.swift */; };
 		DFFFD8B128E568A70027D0D8 /* ButtonPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFFD8B028E568A60027D0D8 /* ButtonPracticeViewController.swift */; };
 		DFFFD8D428E886500027D0D8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFFD8D328E886500027D0D8 /* MapViewController.swift */; };
 		DFFFD8D728EC84A20027D0D8 /* MKAnnotationViewPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFFD8D628EC84A20027D0D8 /* MKAnnotationViewPractice.swift */; };
@@ -100,6 +101,7 @@
 		DFF7F92A28F55BFB00804BEE /* ClusterAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterAnnotationView.swift; sourceTree = "<group>"; };
 		DFF7F92C28F55F5400804BEE /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		DFFBDB672966FBC50075A144 /* DiffableDataSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableDataSourceViewController.swift; sourceTree = "<group>"; };
+		DFFBDB6B296D1D990075A144 /* ConcurrentQueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentQueueViewController.swift; sourceTree = "<group>"; };
 		DFFFD8B028E568A60027D0D8 /* ButtonPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPracticeViewController.swift; sourceTree = "<group>"; };
 		DFFFD8D328E886500027D0D8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DFFFD8D628EC84A20027D0D8 /* MKAnnotationViewPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKAnnotationViewPractice.swift; sourceTree = "<group>"; };
@@ -178,6 +180,8 @@
 		DF50567B2884586900E6F8AA /* UIKitDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				DFFBDB6A296D1D710075A144 /* Concurrency */,
+				DFFBDB69296D1D650075A144 /* ScrollView */,
 				DFFBDB662966FB6E0075A144 /* DiffableDataSource */,
 				DFA6BDBC294C28FB004E0FC4 /* SwiftUI+UIKit */,
 				DFF460DF291FD72E001D8CEC /* CollectionViewDynamicHeight */,
@@ -196,7 +200,6 @@
 				DF5056852884586B00E6F8AA /* Assets.xcassets */,
 				DF5056872884586B00E6F8AA /* LaunchScreen.storyboard */,
 				DF50568A2884586B00E6F8AA /* Info.plist */,
-				DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */,
 				DF479F72289FDF5A00DA2E2B /* ClosurePrac.playground */,
 			);
 			path = UIKitDictionary;
@@ -283,6 +286,22 @@
 				DFFBDB672966FBC50075A144 /* DiffableDataSourceViewController.swift */,
 			);
 			path = DiffableDataSource;
+			sourceTree = "<group>";
+		};
+		DFFBDB69296D1D650075A144 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		DFFBDB6A296D1D710075A144 /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBDB6B296D1D990075A144 /* ConcurrentQueueViewController.swift */,
+			);
+			path = Concurrency;
 			sourceTree = "<group>";
 		};
 		DFFFD8AD28E562320027D0D8 /* Button */ = {
@@ -401,6 +420,7 @@
 				DF3F8C3228BB5E5B00D48913 /* ImagePickerViewController.swift in Sources */,
 				DF050B1B28A3E7F900A5912D /* NextViewController.swift in Sources */,
 				DFF460E3291FD76B001D8CEC /* DynamicCollectionViewCell.swift in Sources */,
+				DFFBDB6C296D1D990075A144 /* ConcurrentQueueViewController.swift in Sources */,
 				DFAD3E7428F6903600E03C8B /* CompositionalCollectionViewLayoutViewController.swift in Sources */,
 				DFF7F92228F54C5A00804BEE /* OfficeDetailViewController.swift in Sources */,
 				DFF7F92028F44FF900804BEE /* OfficeAnnotationView.swift in Sources */,
