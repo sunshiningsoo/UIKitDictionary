@@ -50,6 +50,7 @@
 		DFF7F92D28F55F5400804BEE /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7F92C28F55F5400804BEE /* TestData.swift */; };
 		DFFBDB682966FBC50075A144 /* DiffableDataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFBDB672966FBC50075A144 /* DiffableDataSourceViewController.swift */; };
 		DFFBDB6C296D1D990075A144 /* ConcurrentQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFBDB6B296D1D990075A144 /* ConcurrentQueueViewController.swift */; };
+		DFFBDB6F296D2D790075A144 /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFBDB6E296D2D790075A144 /* InstagramViewController.swift */; };
 		DFFFD8B128E568A70027D0D8 /* ButtonPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFFD8B028E568A60027D0D8 /* ButtonPracticeViewController.swift */; };
 		DFFFD8D428E886500027D0D8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFFD8D328E886500027D0D8 /* MapViewController.swift */; };
 		DFFFD8D728EC84A20027D0D8 /* MKAnnotationViewPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFFD8D628EC84A20027D0D8 /* MKAnnotationViewPractice.swift */; };
@@ -102,6 +103,7 @@
 		DFF7F92C28F55F5400804BEE /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		DFFBDB672966FBC50075A144 /* DiffableDataSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableDataSourceViewController.swift; sourceTree = "<group>"; };
 		DFFBDB6B296D1D990075A144 /* ConcurrentQueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentQueueViewController.swift; sourceTree = "<group>"; };
+		DFFBDB6E296D2D790075A144 /* InstagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
 		DFFFD8B028E568A60027D0D8 /* ButtonPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPracticeViewController.swift; sourceTree = "<group>"; };
 		DFFFD8D328E886500027D0D8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DFFFD8D628EC84A20027D0D8 /* MKAnnotationViewPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKAnnotationViewPractice.swift; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 		DFF7F92E28F68E9200804BEE /* CompositionalLayoutCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				DFFBDB6D296D2D5C0075A144 /* InstagramUI */,
 				DFAD3E7328F6903600E03C8B /* CompositionalCollectionViewLayoutViewController.swift */,
 				DFAD3E7528F6942D00E03C8B /* CompositionalHeaderCollectionViewCell.swift */,
 				DFA9D12928F69865000CD26A /* CompositionalDetailCollectionViewCell.swift */,
@@ -302,6 +305,14 @@
 				DFFBDB6B296D1D990075A144 /* ConcurrentQueueViewController.swift */,
 			);
 			path = Concurrency;
+			sourceTree = "<group>";
+		};
+		DFFBDB6D296D2D5C0075A144 /* InstagramUI */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBDB6E296D2D790075A144 /* InstagramViewController.swift */,
+			);
+			path = InstagramUI;
 			sourceTree = "<group>";
 		};
 		DFFFD8AD28E562320027D0D8 /* Button */ = {
@@ -419,6 +430,7 @@
 				DFF7F92D28F55F5400804BEE /* TestData.swift in Sources */,
 				DF3F8C3228BB5E5B00D48913 /* ImagePickerViewController.swift in Sources */,
 				DF050B1B28A3E7F900A5912D /* NextViewController.swift in Sources */,
+				DFFBDB6F296D2D790075A144 /* InstagramViewController.swift in Sources */,
 				DFF460E3291FD76B001D8CEC /* DynamicCollectionViewCell.swift in Sources */,
 				DFFBDB6C296D1D990075A144 /* ConcurrentQueueViewController.swift in Sources */,
 				DFAD3E7428F6903600E03C8B /* CompositionalCollectionViewLayoutViewController.swift in Sources */,
