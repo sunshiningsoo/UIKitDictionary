@@ -34,6 +34,7 @@
 		DFAD3E7428F6903600E03C8B /* CompositionalCollectionViewLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD3E7328F6903600E03C8B /* CompositionalCollectionViewLayoutViewController.swift */; };
 		DFAD3E7628F6942D00E03C8B /* CompositionalHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD3E7528F6942D00E03C8B /* CompositionalHeaderCollectionViewCell.swift */; };
 		DFDC1DD6288EB780001EE52B /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */; };
+		DFDE50192977B3D300E515E8 /* SubscriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDE50182977B3D300E515E8 /* SubscriptViewController.swift */; };
 		DFE747C328FE7D0F0048E70A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE747C228FE7D0F0048E70A /* FirstViewController.swift */; };
 		DFE747C528FE7D220048E70A /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE747C428FE7D220048E70A /* ModalViewController.swift */; };
 		DFE747C728FE81A10048E70A /* CustomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE747C628FE81A10048E70A /* CustomStackView.swift */; };
@@ -87,6 +88,7 @@
 		DFAD3E7328F6903600E03C8B /* CompositionalCollectionViewLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalCollectionViewLayoutViewController.swift; sourceTree = "<group>"; };
 		DFAD3E7528F6942D00E03C8B /* CompositionalHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		DFDC1DD5288EB780001EE52B /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		DFDE50182977B3D300E515E8 /* SubscriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptViewController.swift; sourceTree = "<group>"; };
 		DFE747C228FE7D0F0048E70A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		DFE747C428FE7D220048E70A /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		DFE747C628FE81A10048E70A /* CustomStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStackView.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		DF50567B2884586900E6F8AA /* UIKitDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				DFDE50172977B3C200E515E8 /* Subscript */,
 				DFFBDB6A296D1D710075A144 /* Concurrency */,
 				DFFBDB69296D1D650075A144 /* ScrollView */,
 				DFFBDB662966FB6E0075A144 /* DiffableDataSource */,
@@ -228,6 +231,14 @@
 				DFA6BDBF294C2926004E0FC4 /* SwiftUIView.swift */,
 			);
 			path = "SwiftUI+UIKit";
+			sourceTree = "<group>";
+		};
+		DFDE50172977B3C200E515E8 /* Subscript */ = {
+			isa = PBXGroup;
+			children = (
+				DFDE50182977B3D300E515E8 /* SubscriptViewController.swift */,
+			);
+			path = Subscript;
 			sourceTree = "<group>";
 		};
 		DFE747C128FE7CFF0048E70A /* StackModal */ = {
@@ -430,6 +441,7 @@
 				DFF7F92D28F55F5400804BEE /* TestData.swift in Sources */,
 				DF3F8C3228BB5E5B00D48913 /* ImagePickerViewController.swift in Sources */,
 				DF050B1B28A3E7F900A5912D /* NextViewController.swift in Sources */,
+				DFDE50192977B3D300E515E8 /* SubscriptViewController.swift in Sources */,
 				DFFBDB6F296D2D790075A144 /* InstagramViewController.swift in Sources */,
 				DFF460E3291FD76B001D8CEC /* DynamicCollectionViewCell.swift in Sources */,
 				DFFBDB6C296D1D990075A144 /* ConcurrentQueueViewController.swift in Sources */,
